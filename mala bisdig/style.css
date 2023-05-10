@@ -1,0 +1,320 @@
+/* Navbar */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #625757;
+    color: #000;
+    height: 80px;
+    padding: 0 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logo img {
+    height: 50px;
+  }
+  
+  .menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu li {
+    margin-left: 40px;
+  }
+  
+  .menu li a {
+    color: #000;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  
+  .menu li a:hover {
+    color: #f44336;
+  }
+  
+  .toggle {
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .menu {
+      display: none;
+    }
+    .toggle {
+      display: block;
+    }
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+      height: auto;
+      padding: 20px;
+    }
+    .menu li {
+      margin: 10px 0;
+    }
+  }
+  /* About Me Section */
+  
+  .about-me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    background-color: #f2f2f2;
+  }
+  
+  .about-me h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 50px;
+  }
+  
+  .about-me-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .about-me-content img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 30px;
+  }
+  
+  .about-me-content p {
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: center;
+  }
+  /* Pengalaman Kerja Section */
+  
+  .experience {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    background-color: #f2f2f2;
+  }
+  
+  .experience h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 50px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    max-width: 600px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: block;
+  }
+  
+  input[type="text"],
+  input[type="date"],
+  textarea {
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+  }
+  
+  textarea {
+    height: 150px;
+  }
+  
+  button[type="submit"] {
+    background-color: #4285f4;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #000;
+  }
+  /* Hobi Section */
+  
+  .hobby {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+  }
+  
+  .hobby h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 50px;
+  }
+  
+  .hobby-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+  }
+  
+  .hobby-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+  }
+  
+  .hobby-item img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .hobby-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .hobby-item p {
+    font-size: 16px;
+    text-align: center;
+  }
+  /* Education Section */
+  
+  .education {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+  }
+  
+  .education h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 50px;
+  }
+  
+  .education-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+  }
+  
+  .education-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+  }
+  
+  .education-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .education-item p {
+    font-size: 16px;
+    text-align: center;
+  }
+  
+  .education-item .school {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .education-item .major {
+    font-style: italic;
+    margin-bottom: 5px;
+  }
+  
+  .education-item .year {
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  /* Contact Section */
+  
+  .contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+  }
+  
+  .contact h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 50px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  
+  label {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  
+  input, textarea {
+    padding: 10px;
+    border: none;
+  }
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #423a3a;
+    color: #f1ebeb;
+  }
+  
+  .footer-left h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .footer-left p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  .social-icons a {
+    display: inline-block;
+    margin-right: 10px;
+    color: #333;
+  }
